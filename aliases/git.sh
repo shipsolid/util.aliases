@@ -114,7 +114,7 @@ alias ghard-reset='git reset --hard && git clean -fd'
 
 ## Helpful Shortcuts for Daily Workflow ##
 # Clone a repository
-alias gcl="bash clone.sh"
+# alias gcl="bash clone.sh"
 
 # Alias for viewing only the last n commits
 alias gl5='git log -n 5 --oneline'
