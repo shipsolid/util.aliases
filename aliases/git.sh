@@ -123,7 +123,7 @@ alias gl5='git log -n 5 --oneline'
 alias gundo='git reset --soft HEAD~1'
 
 # Show all remotes
-alias grm='git remote -v'
+alias grv='git remote -v'
 
 # Fetch all branches and prune removed ones
 alias gfp='git fetch --all --prune'
