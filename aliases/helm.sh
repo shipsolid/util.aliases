@@ -1,6 +1,7 @@
 ## Helm basic commands
 # Shorter alias for helm
 alias h='helm'
+alias he='helm env'
 # retrieve information about an installed release (an active deployment of a chart).
 alias hg='helm get'
 # download all information for a named release
@@ -57,7 +58,7 @@ alias hla='helm list --all-namespaces'
 # List all the releases in a specific namespace
 alias hln='helm list --namespace'
 
-alias hlsn='helm list --namespace --short'
+alias hlns='helm list --namespace --short'
 
 # List all the releases in a specific output format
 alias hlo='helm list --output'
@@ -124,7 +125,7 @@ alias hh='helm history'
 # Show Release History with optional limit
 alias hhistory='function _hhistory() { helm history "$1" -n "${2:-default}" --max "${3:-5}"; }; _hhistory'
 
-# Check the status of a release
+# Check the status of a release | Usage: helm status RELEASE_NAME [flags]
 alias hst='helm status'
 
 # Helm Release Status with simple output (useful for monitoring)

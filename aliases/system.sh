@@ -60,8 +60,9 @@ alias pip='pip3'
 # dgrep "alias " aliases | grep -oP "\s+\w+='" | sort | uniq -d
 alias dupli="dgrep \"alias \" $loc_aliases | grep -oP \"\s+\w+='\" | sort | uniq -d"
 
-source $loc_aliases/git.sh
 source $loc_aliases/docker.sh
-source $loc_aliases/k8s.sh
-source $loc_aliases/helm.sh
 source $loc_aliases/flux.sh
+source $loc_aliases/gh.sh
+source $loc_aliases/git.sh
+source $loc_aliases/helm.sh
+source $loc_aliases/k8s.sh
