@@ -55,6 +55,8 @@ alias brc='source ~/.bashrc'
 
 alias py='python3'
 alias pip='pip3'
+alias cvpy='rm -rf ~/pyvenv && python3 -m venv ~/pyvenv && source ~/pyvenv/bin/activate && pip install --upgrade pip setuptools wheel'
+alias spy='source ~/pyvenv/bin/activate'
 
 # Find duplicate aliases
 # dgrep "alias " aliases | grep -oP "\s+\w+='" | sort | uniq -d
