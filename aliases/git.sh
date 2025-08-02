@@ -42,6 +42,8 @@ alias girb='git rebase -i HEAD~' # Interactive rebase for last n commits
 # Logging
 alias gl='git log --oneline --graph --decorate'
 alias gls='git log --stat'
+# from HEAD@{push} up to current HEAD” (i.e., the new commits since the last push)
+alias glslocal='git log --stat HEAD@{push}..HEAD'
 alias gld='git log --decorate --oneline --graph --all'
 alias gplog='git log -1 HEAD' # Show the most recent commit
 
