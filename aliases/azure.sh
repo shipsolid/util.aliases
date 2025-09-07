@@ -107,6 +107,8 @@ alias aznsgl='az network nsg list -o table'                                     
 ## Azure AD / Identity
 alias azsp_create='az ad sp create-for-rbac --role Contributor --scopes "/subscriptions/<SUBSCRIPTION_ID>"'       # Create SP
 alias azsp_list='az ad sp list -o table'                                        # List Service Principals
+alias azsp_listsp='az ad sp list --display-name'                                # List Service Principals Details
+alias azsp_del='az ad sp delete --id'                                           # Delete Service Principals
 alias azapp_list='az ad app list -o table'                                      # List AAD Apps
 alias azgrp_list='az ad group list -o json'                                     # List AAD Groups
 
