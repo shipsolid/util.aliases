@@ -68,3 +68,4 @@ source $loc_aliases/gh.sh
 source $loc_aliases/git.sh
 source $loc_aliases/helm.sh
 source $loc_aliases/k8s.sh
+source $loc_aliases/azure.sh
