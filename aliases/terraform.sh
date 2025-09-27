@@ -5,7 +5,7 @@
 
 ## Installation / Version
 alias tf_install='brew install terraform'  # Install Terraform (macOS/Homebrew)
-alias tfv='terraform version'              # Show Terraform version
+alias tfver='terraform version'              # Show Terraform version
 alias tfh='terraform -help'                # Show Terraform help/usage
 
 ## Init / Workspace
@@ -25,7 +25,7 @@ alias tfd='terraform destroy'                 # Destroy interactively
 alias tfda='terraform destroy -auto-approve'  # Destroy without prompt
 
 ## Validation / Format / Lint
-alias tfvld='terraform validate'               # Validate configuration
+alias tfv='terraform validate'               # Validate configuration
 alias tff='terraform fmt -recursive'           # Format code recursively
 alias tffch='terraform fmt -check -recursive'  # Check formatting without modifying
 
