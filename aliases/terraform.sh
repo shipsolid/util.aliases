@@ -17,14 +17,14 @@ alias tfwn='terraform workspace new'     # Usage: tfwn <WORKSPACE_NAME>
 
 ## Plan / Apply / Destroy
 alias tfp='terraform plan'                    # Show execution plan
-alias tfpo='terraform plan -out=main.tfplan'     # Plan and save to file
+alias tfpo='terraform plan -out=tfplan'     # Plan and save to file
 alias tfa='terraform apply'                   # Apply changes interactively
 alias tfaa='terraform apply -auto-approve'    # Apply without prompt
-alias tfao='terraform apply main.tfplan'         # Apply from saved plan
+alias tfao='terraform apply tfplan'         # Apply from saved plan
 alias tfd='terraform destroy'                 # Destroy interactively
 alias tfda='terraform destroy -auto-approve'  # Destroy without prompt
 alias tfpd='terraform plan -destroy'          # Destroy Plan
-alias tfpdo='terraform plan -destroy -out main.tfplan'  # Destroy Plan and save to file
+alias tfpdo='terraform plan -destroy -out tfplan'  # Destroy Plan and save to file
 
 ## Validation / Format / Lint
 alias tfv='terraform validate'               # Validate configuration
@@ -43,4 +43,4 @@ alias tfog='terraform graph | dot -Tpng > graph.png'  # Generate resource graph 
 
 ## Misc
 alias tfdiff='terraform plan -detailed-exitcode'             # Diff mode (0=no change, 2=change, 1=error)
-alias tfclean='rm -rf .terraform main.tfplan terraform.tfstate*'  # Remove local state & plan files (careful!)
+alias tfclean='rm -rf .terraform tfplan terraform.tfstate*'  # Remove local state & plan files (careful!)
