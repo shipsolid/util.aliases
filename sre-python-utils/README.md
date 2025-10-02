@@ -13,20 +13,6 @@
 - Prometheus & Grafana helpers
 - Azure auth helper (DefaultAzureCredential)
 
-## Quickstart
-
-1) python3 -m venv .venv && source .venv/bin/activate
-2) pip install -r requirements.txt
-3) cp config/config.example.yaml config/config.yaml ; cp .env.example .env
-4) python -m srekit.cli --help
-
-### Config env overrides
-
-- Prefix env vars with `SREKIT__`, and use `__` between nested keys.
-  Example:
-    SREKIT__grafana__url=https://grafana.example.com
-    SREKIT__logging__json=true
-
 ## What’s inside
 
 - `src/srekit/cli.py` — Typer-based CLI (`python -m srekit.cli --help`)
@@ -40,6 +26,13 @@
 - `scripts/example_prom_check.py` — demo: CPU>80% → Slack webhook
 - `config/config.example.yaml` & `.env.example`
 - `requirements.txt` & a brief `README.md`
+
+## Quickstart
+
+1) python3 -m venv .venv && source .venv/bin/activate
+2) pip install -r requirements.txt
+3) cp config/config.example.yaml config/config.yaml ; cp .env.example .env
+4) python -m srekit.cli --help
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
@@ -59,7 +52,12 @@ python -m srekit.cli grafana me
 python scripts/example_prom_check.py
 ```
 
-### Env overrides (great for CI/Secrets)
+### Config env overrides
+
+- Prefix env vars with `SREKIT__`, and use `__` between nested keys.
+  Example:
+    SREKIT__grafana__url=https://grafana.example.com
+    SREKIT__logging__json=true
 
 Set env vars with `SREKIT__` prefix and `__` for nesting:
 
