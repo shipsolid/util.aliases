@@ -1,0 +1,13 @@
+
+grafana:
+  url: "https://grafana.example.com"
+  token: ""
+prometheus:
+  url: "http://prometheus.example:9090"
+slack:
+  webhook_url: ""
+logging:
+  level: "INFO"
+  json: false
+scheduler:
+  timezone: "Asia/Kolkata"
