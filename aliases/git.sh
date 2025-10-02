@@ -2,6 +2,10 @@
 # source /Users/amit/repos/amit-singh-7--bash--utils-main/git-aliases.sh
 
 ## Basic Git Aliases ##
+alias gi='git init'
+alias gib='git init --initial-branch=' # Initialize a new Git repository with branch
+alias gibm='git init --initial-branch=main' # Initialize a new Git repository with main as the default branch
+
 # Status, add, and commit in a single alias
 alias gs='git status'
 # iterate over each directory in the current location and check the Git status
