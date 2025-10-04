@@ -1,0 +1,8 @@
+Jupyter Notebook is a tool that lets you write and run Python code in small chunks (called cells) — and see the results immediately, all in your web browser. It's great for learning, experimenting, data science, and even making notes with code.
+
+Think of it like a mix between a code editor and a notebook.
+
+Install it with pip and then you can run it from the terminal "jupyter notebook".
+
+This will open up a web browser.
+There you can open these ipynb files, like the one from this directory.
