@@ -6,6 +6,13 @@
     "args": "Make: run (current file)",
     "when": "editorTextFocus && resourceExtname == .py"
     // "when": "editorTextFocus && editorLangId == python"
+  },
+  {
+      "key": "ctrl+t",
+      "command": "workbench.action.tasks.runTask",
+      "args": "Make: run-ts (current file, timestamped)",
+      "when": "editorTextFocus && resourceExtname == .py"
+      // "when": "editorTextFocus && editorLangId == python"
   }
 ]
 
