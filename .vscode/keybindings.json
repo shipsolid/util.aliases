@@ -1,0 +1,11 @@
+// .vscode/keybindings.json
+[
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Make: run (current file)",
+    "when": "editorTextFocus && resourceExtname == .py"
+    // "when": "editorTextFocus && editorLangId == python"
+  }
+]
+

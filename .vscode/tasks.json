@@ -1,35 +1,91 @@
+//v3
 {
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run Python Script",
+        //   "label": "Make: run (current file)",
+        "label": "Run Python Script",
             "type": "shell",
-            "command": "/usr/bin/bash",
+            "command": "make",
             "args": [
-            "-lc",
-            "\"${workspaceFolder}/.venv/bin/python\" \"${workspaceFolder}/samples.python/basics.01.patterns/basics.py\" < \"${workspaceFolder}/samples.python/input.txt\" > \"${workspaceFolder}/samples.python/output.txt\" 2>&1 || true"
+            "run",
+            "SCRIPT=${file}"
             ],
             "options": {
             "cwd": "${workspaceFolder}",
-            "shell": {
-                "executable": "/usr/bin/bash",
-                "args": ["-lc"]
-            }
+            "shell": { "executable": "/usr/bin/bash", "args": ["-lc"] }
             },
-            "group": { "kind": "build", "isDefault": true },
             "presentation": {
-                "echo": false,
-                "reveal": "silent",
-                "focus": false,
-                "panel": "dedicated",
-                "showReuseMessage": true,
-                "clear": false
+            "echo": false,
+            "reveal": "silent",
+            "focus": false,
+            "panel": "dedicated",
+            "showReuseMessage": false,
+            "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Make: run-ts (current file, timestamped)",
+            "type": "shell",
+            "command": "make",
+            "args": [
+            "run-ts",
+            "SCRIPT=${file}"
+            ],
+            "options": {
+            "cwd": "${workspaceFolder}",
+            "shell": { "executable": "/usr/bin/bash", "args": ["-lc"] }
+            },
+            "presentation": {
+            "echo": false,
+            "reveal": "silent",
+            "focus": false,
+            "panel": "dedicated",
+            "showReuseMessage": false,
+            "clear": false
             },
             "problemMatcher": []
         }
     ]
 }
 
+
+
+// v2
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "Run Python Script",
+//             "type": "shell",
+//             "command": "/usr/bin/bash",
+//             "args": [
+//             "-lc",
+//             "\"${workspaceFolder}/.venv/bin/python\" \"${workspaceFolder}/samples.python/basics.01.patterns/basics.py\" < \"${workspaceFolder}/samples.python/input.txt\" > \"${workspaceFolder}/samples.python/output.txt\" 2>&1 || true"
+//             ],
+//             "options": {
+//             "cwd": "${workspaceFolder}",
+//             "shell": {
+//                 "executable": "/usr/bin/bash",
+//                 "args": ["-lc"]
+//             }
+//             },
+//             "group": { "kind": "build", "isDefault": true },
+//             "presentation": {
+//                 "echo": false,
+//                 "reveal": "silent",
+//                 "focus": false,
+//                 "panel": "dedicated",
+//                 "showReuseMessage": true,
+//                 "clear": false
+//             },
+//             "problemMatcher": []
+//         }
+//     ]
+// }
+
+// v1
 // {
 //     "version": "2.0.0",
 //     "tasks": [

@@ -1,5 +1,9 @@
-Enter your name: Hello, amit
+
+Enter your name: 
+Enter your name: 
+
+Hello, amit
 Traceback (most recent call last):
-  File "/home/amit/repos/shipsolid--util.aliases-main/samples.python/basics.01.patterns/basics.py", line 8, in <module>
+  File "/home/amit/repos/shipsolid--util.aliases-main/samples.python/basics.01.patterns/basics.py", line 11, in <module>
     raise ValueError("Test exception")
 ValueError: Test exception
